@@ -14,8 +14,8 @@ def test_index(client):
     assert b'Welcome to the funny app!' in response.data
     print("Test index function executed successfully!")
 
-# def test_random_joke(client):
-#     response = client.get('/random_joke')
-#     assert response.status_code == 200
-#     assert any(joke.encode() in response.data for joke in app.jokes)
-#     print("Test random_joke function executed successfully!")
+def test_random_joke(client):
+    response = client.get('/random_joke')
+    assert response.status_code == 200
+    assert any(random_joke.encode() in response.data for random_joke in app.jokes)
+    print("Test random_joke function executed successfully!")
