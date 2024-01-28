@@ -17,5 +17,5 @@ def test_index(client):
 def test_random_joke(client):
     response = client.get('/random_joke')
     assert response.status_code == 200
-    assert any(jokes.encode() in response.data for jokes in app.jokes)
-    print("Test random_joke function executed successfully!")
+    assert any(joke.encode() in response.data for joke in jokes)  # Use the imported jokes list
+
