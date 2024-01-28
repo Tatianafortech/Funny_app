@@ -1,7 +1,7 @@
 # tests/test_funny_app.py
 
 import pytest
-from funny_app import app
+from funny_app import app, jokes  # Import the jokes list from the main module
 
 @pytest.fixture
 def client():
