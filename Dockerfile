@@ -31,3 +31,9 @@ RUN chown -R jenkins:jenkins /var/jenkins_home
 VOLUME [ "/var/jenkins_home" ]
 
 USER jenkins
+
+ENV CASC_JENKINS_CONFIG /usr/share/jenkins/ref/jenkins.yaml
+ENV _BUILDAH_STARTED_IN_USERNS="" BUILDAH_ISOLATION=chroot
+COPY files/jenkins.yaml /usr/share/jenkins/ref/jenkins.yaml
+COPY files/plugins.txt /usr/share/jenkins/ref/plugins.txt
+RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
