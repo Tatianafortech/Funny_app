@@ -1,5 +1,5 @@
 import unittest
-from your_python_script import generate_random_joke
+from funny_app.py import generate_random_joke
 
 class TestJokeGeneration(unittest.TestCase):
     def test_generated_joke(self):
