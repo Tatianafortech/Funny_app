@@ -13,10 +13,12 @@ def index():
     return "Welcome to the funny app!"
 
 @app.route("/random_joke")
-def random_joke():
+# def random_joke():
+#     import random
+#     return random.choice(jokes)
+def generate_random_joke():
     import random
     return random.choice(jokes)
-
     
 if __name__ == "__main__":
     app.run(debug=True)
