@@ -29,6 +29,7 @@ https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-
 -> https://ngrok.com/docs/integrations/hostedhooks/webhooks/ 
 brew install ngrok
 https://www.youtube.com/watch?v=eGSK0oxYrS8
+ngrok http 8080 
 
 
 -> status check - investigate
