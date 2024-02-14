@@ -32,4 +32,6 @@ brew install ngrok
 -> status check - investigate
 https://stackoverflow.com/questions/14274293/show-current-state-of-jenkins-build-on-github-repo/51003334#51003334
 
-test
+![image](https://github.com/Tatianafortech/Funny_app/assets/111741943/25ce0eeb-46f9-408e-b258-fc582425e867)
+
+![image](https://github.com/Tatianafortech/Funny_app/assets/111741943/147aa5b8-4c11-43a0-88db-f9ccbaf1100e)
