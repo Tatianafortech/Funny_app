@@ -29,7 +29,7 @@ https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-
 -> https://ngrok.com/docs/integrations/hostedhooks/webhooks/ 
 brew install ngrok
 
--> status check - investigate
+-> status check - investigate - CREATE
 https://stackoverflow.com/questions/14274293/show-current-state-of-jenkins-build-on-github-repo/51003334#51003334
 https://www.youtube.com/watch?v=jSm0YZ-NQAc
 
