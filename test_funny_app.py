@@ -11,7 +11,7 @@ def client():
 def test_index(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert b'Welcome to the funny app!' in response.data
+    assert b'Welcome to the funny app v2!' in response.data
     print("Test index function executed successfully!")
 
 def test_random_joke(client):
