@@ -1,5 +1,5 @@
 # Funny_app
-funny_app test
+funny_app 
 
 # install system tools
 Install rancher desktop -> websearch
