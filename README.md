@@ -1,6 +1,9 @@
 # Funny_app
 funny_app
-test
+
+
+test 
+
 # install system tools
 Install rancher desktop -> websearch
 brew install docker-credential-helper 
