@@ -20,7 +20,7 @@ jokes = [
 
 @app.route("/")
 def index():
-    return """
+    # return """
     # <h1>Welcome to the funny app v2!</h1>
     # <a href="/random_joke"><button>Get a Random Joke</button></a>
     # """
