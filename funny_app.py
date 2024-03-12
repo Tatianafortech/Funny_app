@@ -1,4 +1,5 @@
 from flask import Flask
+import random
 
 app = Flask(__name__)
 
@@ -27,12 +28,14 @@ def index():
     # return "Welcome to the funny app v2!"
 
 @app.route("/random_joke")
-# def random_joke():
-#     import random
-#     return random.choice(jokes)
 def generate_random_joke():
-    import random
-    return random.choice(jokes)
+    # return random.choice(jokes)
+    joke = random.choice(jokes)
+    return """
+    <h1>Random Joke</h1>
+    <p>{}</p>
+    <a href="/random_joke"><button>Refresh</button></a>
+    """.format(joke)
     
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8001, debug=True)
