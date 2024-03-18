@@ -21,21 +21,21 @@ jokes = [
 
 @app.route("/")
 def index():
-    # return """
-    # <h1>Welcome to the funny app v2!</h1>
-    # <a href="/random_joke"><button>Get a Random Joke</button></a>
-    # """
-    return "Welcome to the funny app v2!"
+    return """
+    <h1>Welcome to the funny app v2!</h1>
+    <a href="/random_joke"><button>Get a Random Joke</button></a>
+    """
+    # return "Welcome to the funny app v2!"
 
 @app.route("/random_joke")
 def generate_random_joke():
-    return random.choice(jokes)
-    # joke = random.choice(jokes)
-    # return """
-    # <h1>Random Joke</h1>
-    # <p>{}</p>
-    # <a href="/random_joke"><button>Refresh</button></a>
-    # """.format(joke)
+    # return random.choice(jokes)
+    joke = random.choice(jokes)
+    return """
+    <h1>Random Joke</h1>
+    <p>{}</p>
+    <a href="/random_joke"><button>Refresh</button></a>
+    """.format(joke)
     
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8001, debug=True)
