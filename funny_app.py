@@ -2,7 +2,8 @@ from flask import Flask
 import random
 
 app = Flask(__name__)
-
+    
+# list of jokes
 jokes = [
         "Why don't scientists trust atoms? Because they make up everything!",
         "Why did the computer catch a cold? It had a bad Windows!",
